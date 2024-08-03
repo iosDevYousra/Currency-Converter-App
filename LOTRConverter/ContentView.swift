@@ -13,7 +13,7 @@ struct ContentView: View {
           //background image
             Image(.background)
                 .resizable()
-                .ignoresSafeArea()
+                .ignoresSafeAreasa()
             VStack{
            //prancy pony image
           //currency exchange text
