@@ -20,6 +20,7 @@ struct ContentView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
+                
             //currency exchange text
                 Text("Currency Exchange")
                     .font(.largeTitle)
@@ -32,29 +33,49 @@ struct ContentView: View {
                       //curency
                         HStack{
                           //curency image
-                            //curency text
+                            Image(.silverpenny)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height:33)
+                                
                             
+                            //curency text
+                            Text("Silver Piece")
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                                
                             
                         }
                         //text field
-                        
-                        
+                        Text("TextFields")
                         
                         
                     }
                 //equal sign
+                    Image(systemName: "equal")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .symbolEffect(.pulse)
+    
                 //right conversion section
                     VStack{
                       //curency
                         HStack{
                           //curency text
+                            Text("Gold Piece")
+                                .font(.headline)
+                                .foregroundStyle(.white)
                             //curency image
-                            
+                            Image(.goldpiece)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height:33)
+                                
                             
                         }
                         //text field
                         
-                        
+                        Text("TextFields")
                         
                         
                     }
@@ -62,7 +83,7 @@ struct ContentView: View {
                     
                     
                 }
-                
+              //info button
                 
                 
             }
