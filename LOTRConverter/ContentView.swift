@@ -11,6 +11,9 @@ struct ContentView: View {
     var body: some View {
         ZStack{
           //background image
+            Image(.background)
+                .resizable()
+                .ignoresSafeArea()
             VStack{
            //prancy pony image
           //currency exchange text
