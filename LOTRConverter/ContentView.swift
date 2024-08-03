@@ -18,9 +18,37 @@ struct ContentView: View {
                 HStack{
                  
                 //left conversion section
+                    VStack{
+                      //curency
+                        HStack{
+                          //curency image
+                            //curency text
+                            
+                            
+                        }
+                        //text field
+                        
+                        
+                        
+                        
+                    }
                 //equal sign
                 //right conversion section
-                    
+                    VStack{
+                      //curency
+                        HStack{
+                          //curency text
+                            //curency image
+                            
+                            
+                        }
+                        //text field
+                        
+                        
+                        
+                        
+                    }
+
                     
                     
                 }
