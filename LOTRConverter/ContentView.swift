@@ -13,10 +13,17 @@ struct ContentView: View {
           //background image
             Image(.background)
                 .resizable()
-                .ignoresSafeAreasa()
+                .ignoresSafeArea()
             VStack{
            //prancy pony image
-          //currency exchange text
+                Image(.prancingpony)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+            //currency exchange text
+                Text("Currency Exchange")
+                    .font(.largeTitle)
+                    .foregroundStyle(.white)
          //curency convention section
                 HStack{
                  
