@@ -60,7 +60,10 @@ struct ContentView: View {
             
             VStack{}
             VStack{}
-            
+            VStack{}
+            VStack{}
+            VStack{}
+            VStack{}
             
         }
     }
