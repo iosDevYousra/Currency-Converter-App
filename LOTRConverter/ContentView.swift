@@ -58,7 +58,8 @@ struct ContentView: View {
             }
             
             
-            
+            VStack{}
+            VStack{}
             
             
         }
