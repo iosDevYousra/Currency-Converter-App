@@ -84,11 +84,20 @@ struct ContentView: View {
                     
                 }
                 Spacer()
-              //info button
-                Image(systemName: "info.circle.fill")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
                 
+                
+                
+              //info button
+                
+                Button{
+                    
+                    
+                    
+                }label: {Image(systemName: "info.circle.fill")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                }
+           
                 
             }
             
