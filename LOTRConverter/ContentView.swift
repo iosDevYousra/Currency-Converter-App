@@ -48,8 +48,7 @@ struct ContentView: View {
                         }
                         //text field
                         Text("TextFields")
-                        Text("TextFields")
-                        Text("TextFields")
+                        
                         
                         
                     }
@@ -78,8 +77,7 @@ struct ContentView: View {
                         //text field
                         
                         Text("TextFields")
-                        Text("TextFields")
-                        Text("TextFields")
+                        
                         
                         
                         
