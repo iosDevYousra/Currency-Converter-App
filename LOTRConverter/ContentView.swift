@@ -65,30 +65,29 @@ struct ContentView: View {
                 }
                 Spacer()
                 
-                // Info buttons
+                // First row of Info buttons
                 HStack(spacing: 20) {
-                    Button{
-                        // Action for first info button
-                    } label: {
-                        Image(systemName: "info.circle.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
+                    ForEach(0..<3) { _ in
+                        Button{
+                            // Action for info button
+                        } label: {
+                            Image(systemName: "info.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                        }
                     }
-                    
-                    Button{
-                        // Action for second info button
-                    } label: {
-                        Image(systemName: "info.circle.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                    }
-                    
-                    Button{
-                        // Action for third info button
-                    } label: {
-                        Image(systemName: "info.circle.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
+                }
+                
+                // Second row of Info buttons
+                HStack(spacing: 20) {
+                    ForEach(0..<6) { _ in
+                        Button{
+                            // Action for info button
+                        } label: {
+                            Image(systemName: "info.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                        }
                     }
                 }
             }
