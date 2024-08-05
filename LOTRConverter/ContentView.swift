@@ -1,96 +1,108 @@
+//
+//  ContentView.swift
+//  LOTRConverter
+//
+//  Created by M-Store on 8/2/24.
+//
+
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         ZStack{
-            // Background image
+          //background image
             Image(.background)
                 .resizable()
                 .ignoresSafeArea()
-            
             VStack{
-                // Prancing pony image
+           //prancy pony image
                 Image(.prancingpony)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
                 
-                // Currency exchange text
+            //currency exchange text
                 Text("Currency Exchange")
                     .font(.largeTitle)
                     .foregroundStyle(.white)
-                
-                // Currency conversion section
+         //curency convention section
                 HStack{
-                    // Left conversion section
+                 
+                //left conversion section
                     VStack{
+                      //curency
                         HStack{
-                            // Currency image
+                          //curency image
                             Image(.silverpenny)
                                 .resizable()
                                 .scaledToFit()
-                                .frame(height: 33)
+                                .frame(height:33)
+                                
                             
-                            // Currency text
+                            //curency text
                             Text("Silver Piece")
                                 .font(.headline)
                                 .foregroundStyle(.white)
+                                
+                            
                         }
-                        // Text field
+                        //text field
                         Text("TextFields")
+                        
+                        
                     }
-                    
-                    // Equal sign
+                //equal sign
                     Image(systemName: "equal")
                         .font(.largeTitle)
                         .foregroundColor(.white)
                         .symbolEffect(.pulse)
-                    
-                    // Right conversion section
+    
+                //right conversion section
                     VStack{
+                      //curency
                         HStack{
-                            // Currency text
+                          //curency text
                             Text("Gold Piece")
                                 .font(.headline)
                                 .foregroundStyle(.white)
-                            // Currency image
+                            //curency image
                             Image(.goldpiece)
                                 .resizable()
                                 .scaledToFit()
-                                .frame(height: 33)
+                                .frame(height:33)
+                                
+                            
                         }
-                        // Text field
+                        //text field
+                        
                         Text("TextFields")
+                        
+                        
                     }
+
+                    
+                    
                 }
                 Spacer()
                 
-                // First row of Info buttons
-                HStack(spacing: 20) {
-                    ForEach(0..<3) { _ in
-                        Button{
-                            // Action for info button
-                        } label: {
-                            Image(systemName: "info.circle.fill")
-                                .font(.largeTitle)
-                                .foregroundColor(.white)
-                        }
-                    }
-                }
                 
-                // Second row of Info buttons
-                HStack(spacing: 20) {
-                    ForEach(0..<6) { _ in
-                        Button{
-                            // Action for info button
-                        } label: {
-                            Image(systemName: "info.circle.fill")
-                                .font(.largeTitle)
-                                .foregroundColor(.white)
-                        }
-                    }
+                
+              //info button
+                
+                Button{
+                    
+                    
+                    
+                }label: {Image(systemName: "info.circle.fill")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
                 }
+           
+                
             }
+            
+          
+            
         }
     }
 }
