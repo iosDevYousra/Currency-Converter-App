@@ -4,16 +4,17 @@
 //
 //  Created by M-Store on 8/2/24.
 //
-
 import SwiftUI
 
 struct ContentView: View {
+    @State var showExhangeInfo = false
     var body: some View {
         ZStack{
           //background image
             Image(.background)
                 .resizable()
                 .ignoresSafeArea()
+                
             VStack{
            //prancy pony image
                 Image(.prancingpony)
@@ -25,6 +26,11 @@ struct ContentView: View {
                 Text("Currency Exchange")
                     .font(.largeTitle)
                     .foregroundStyle(.white)
+                
+                   
+               
+
+
          //curency convention section
                 HStack{
                  
@@ -48,8 +54,7 @@ struct ContentView: View {
                         }
                         //text field
                         Text("TextFields")
-                        Text("TextFields")
-                        Text("TextFields")
+                        
                         
                         
                     }
@@ -58,6 +63,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .foregroundColor(.white)
                         .symbolEffect(.pulse)
+                   
     
                 //right conversion section
                     VStack{
@@ -67,6 +73,7 @@ struct ContentView: View {
                             Text("Gold Piece")
                                 .font(.headline)
                                 .foregroundStyle(.white)
+                            
                             //curency image
                             Image(.goldpiece)
                                 .resizable()
@@ -78,8 +85,7 @@ struct ContentView: View {
                         //text field
                         
                         Text("TextFields")
-                        Text("TextFields")
-                        Text("TextFields")
+                        
                         
                         
                         
@@ -94,19 +100,23 @@ struct ContentView: View {
                 
               //info button
                 
-                Button{
-                    
-                    
-                    
-                }label: {Image(systemName: "info.circle.fill")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                }
-           
                 
+                HStack {
+                    Spacer()
+                    Button{
+                        showExhangeInfo.toggle()
+                        print("showExhangeInfo value: \(showExhangeInfo)")
+                    }
+                    
+                    label: {Image(systemName: "info.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                    }
+                    .padding(.trailing)
+                }
             }
             
-          
+            .border(.blue)
             
         }
     }
