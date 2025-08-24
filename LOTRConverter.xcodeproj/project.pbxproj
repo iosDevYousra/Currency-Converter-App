@@ -11,6 +11,8 @@
 		ED447CE82C5CC09A00C26639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED447CE72C5CC09A00C26639 /* ContentView.swift */; };
 		ED447CEA2C5CC09B00C26639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED447CE92C5CC09B00C26639 /* Assets.xcassets */; };
 		ED447CED2C5CC09B00C26639 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED447CEC2C5CC09B00C26639 /* Preview Assets.xcassets */; };
+		ED4A33122E5B085E0005B9BA /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A33112E5B085E0005B9BA /* ExchangeInfo.swift */; };
+		EDA303F72E5B9602002C6BF0 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA303F62E5B95E2002C6BF0 /* ExchangeRate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		ED447CE72C5CC09A00C26639 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED447CE92C5CC09B00C26639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED447CEC2C5CC09B00C26639 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED4A33112E5B085E0005B9BA /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
+		EDA303F62E5B95E2002C6BF0 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				ED447CE52C5CC09A00C26639 /* LOTRConverterApp.swift */,
 				ED447CE72C5CC09A00C26639 /* ContentView.swift */,
+				ED4A33112E5B085E0005B9BA /* ExchangeInfo.swift */,
+				EDA303F62E5B95E2002C6BF0 /* ExchangeRate.swift */,
 				ED447CE92C5CC09B00C26639 /* Assets.xcassets */,
 				ED447CEB2C5CC09B00C26639 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA303F72E5B9602002C6BF0 /* ExchangeRate.swift in Sources */,
+				ED4A33122E5B085E0005B9BA /* ExchangeInfo.swift in Sources */,
 				ED447CE82C5CC09A00C26639 /* ContentView.swift in Sources */,
 				ED447CE62C5CC09A00C26639 /* LOTRConverterApp.swift in Sources */,
 			);

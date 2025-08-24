@@ -54,10 +54,13 @@ struct ContentView: View {
                                 
                             
                         }
+                        .padding(.bottom, -5)
+                        
+                        
                         //text field
                         TextField("Amount", text: $leftAmount)
                             .textFieldStyle(.roundedBorder)
-                            
+                           
                         
                         
                         
@@ -86,23 +89,22 @@ struct ContentView: View {
                                 
                             
                         }
+                        .padding(.bottom, -5)
                         //text field
                         
-                        TextField("Amount", text: $leftAmount)
+                        TextField("Amount", text: $rightAmount)
                             .textFieldStyle(.roundedBorder)
                             .multilineTextAlignment(.trailing)
                         
-                        
-                        
-                        
                     }
-
-                    
-                    
                 }
+                .padding()
+                .background(.black.opacity(0.5))
+                .clipShape(.capsule)
+                
+                
+             
                 Spacer()
-                
-                
                 
               //info button
                 
