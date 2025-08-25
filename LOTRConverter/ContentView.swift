@@ -121,6 +121,9 @@ struct ContentView: View {
                             .foregroundColor(.white)
                     }
                     .padding(.trailing)
+                    .sheet(isPresented: $showExhangeInfo){
+                        ExchangeInfo()
+                    }
                 }
             }
             

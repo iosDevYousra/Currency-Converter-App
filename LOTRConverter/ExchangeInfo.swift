@@ -2,12 +2,13 @@
 //  ExchangeInfo.swift
 //  LOTRConverter
 //
-//  Created by M-Store on 8/24/25.
+//  Created by M-Store on 8/24/24.
 //
 
 import SwiftUI
 
 struct ExchangeInfo: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack{
             //background purchment image
@@ -33,6 +34,7 @@ struct ExchangeInfo: View {
                 ExchangeRate(leftImage: .silverpenny, text: "1 Silver Penny = 100 Coper Pennies", rightImage: .copperpenny)
                 //Done button
                 Button("Done"){
+                    dismiss()
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.brown)
