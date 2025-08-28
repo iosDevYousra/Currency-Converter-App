@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED0012032E5F4A0700884CB0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0012022E5F4A0200884CB0 /* Currency.swift */; };
+		ED0012052E60480C00884CB0 /* iconGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0012042E60480400884CB0 /* iconGrid.swift */; };
 		ED447CE62C5CC09A00C26639 /* LOTRConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED447CE52C5CC09A00C26639 /* LOTRConverterApp.swift */; };
 		ED447CE82C5CC09A00C26639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED447CE72C5CC09A00C26639 /* ContentView.swift */; };
 		ED447CEA2C5CC09B00C26639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED447CE92C5CC09B00C26639 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		ED0012022E5F4A0200884CB0 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		ED0012042E60480400884CB0 /* iconGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconGrid.swift; sourceTree = "<group>"; };
 		ED447CE22C5CC09A00C26639 /* LOTRConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOTRConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED447CE52C5CC09A00C26639 /* LOTRConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTRConverterApp.swift; sourceTree = "<group>"; };
 		ED447CE72C5CC09A00C26639 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				EDA303FE2E5DA5C1002C6BF0 /* SelectCurrency.swift */,
 				EDA303FC2E5DA599002C6BF0 /* CurrencyIcon.swift */,
 				ED0012022E5F4A0200884CB0 /* Currency.swift */,
+				ED0012042E60480400884CB0 /* iconGrid.swift */,
 				ED447CEC2C5CC09B00C26639 /* Preview Assets.xcassets */,
 				ED447CEB2C5CC09B00C26639 /* Preview Content */,
 			);
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0012052E60480C00884CB0 /* iconGrid.swift in Sources */,
 				EDA303F72E5B9602002C6BF0 /* ExchangeRate.swift in Sources */,
 				ED4A33122E5B085E0005B9BA /* ExchangeInfo.swift in Sources */,
 				ED447CE82C5CC09A00C26639 /* ContentView.swift in Sources */,
