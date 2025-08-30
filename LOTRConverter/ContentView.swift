@@ -75,9 +75,9 @@ struct ContentView: View {
                                 .scaledToFit()
                                 .frame(height:33)
                         }
-                        .padding(.bottom , -5 )
+                        .padding(.bottom, -5)
                         .onTapGesture {
-                            showSelectCurrency.toggle()
+                         showSelectCurrency.toggle()
                         }
                         //text field
                         TextField("Amount", text: $rightAmount)
@@ -90,6 +90,7 @@ struct ContentView: View {
                 .padding()
                 .background(.black.opacity(0.5))
                 .clipShape(.capsule)
+                .keyboardType(.decimalPad)
                 Spacer()
                 //info button
                 HStack {
