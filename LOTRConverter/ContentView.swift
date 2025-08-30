@@ -5,41 +5,33 @@
 //  Created by M-Store on 8/2/24.
 //
 import SwiftUI
-
 struct ContentView: View {
     @State var showExhangeInfo = false
     @State var showSelectCurrency = false
     @State var leftAmount = ""
     @State var rightAmount = ""
-    
     @State var leftCurrency: Currency = .silverPiece
     @State var rightCurrency: Currency = .goldPiece
+    @FocusState var leftTyping
+    @FocusState var rightTyping
     var body: some View {
         ZStack{
           //background image
             Image(.background)
                 .resizable()
                 .ignoresSafeArea()
-                
             VStack{
            //prancy pony image
                 Image(.prancingpony)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
-                
             //currency exchange text
                 Text("Currency Exchange")
                     .font(.largeTitle)
                     .foregroundStyle(.white)
-                
-                   
-               
-
-
          //curency convention section
                 HStack{
-                 
                 //left conversion section
                     VStack{
                       //curency
@@ -49,36 +41,30 @@ struct ContentView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height:33)
-                                
-                            
                             //curency text
                             Text(leftCurrency.name)
                                 .font(.headline)
                                 .foregroundStyle(.white)
-                                
-                            
                         }
                         .padding(.bottom, -5)
                         .onTapGesture {
-                            showSelectCurrency.toggle()
+                         showSelectCurrency.toggle()
                         }
-                        
-                        
                         //text field
                         TextField("Amount", text: $leftAmount)
                             .textFieldStyle(.roundedBorder)
-                           
-                        
-                        
-                        
+                            .focused($leftTyping)
+                            .onChange(of: leftAmount){
+                                if leftTyping {
+                                    rightAmount = leftCurrency.convert(leftAmount, to: rightCurrency)
+                            }
+                        }
                     }
                 //equal sign
                     Image(systemName: "equal")
                         .font(.largeTitle)
                         .foregroundColor(.white)
                         .symbolEffect(.pulse)
-                   
-    
                 //right conversion section
                     VStack{
                       //curency
@@ -87,42 +73,33 @@ struct ContentView: View {
                             Text(rightCurrency.name)
                                 .font(.headline)
                                 .foregroundStyle(.white)
-                            
                             //curency image
                             Image(rightCurrency.image)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height:33)
-                                
-                            
                         }
                         .padding(.bottom, -5)
                         .onTapGesture {
                             showSelectCurrency.toggle()
                         }
-                        
-                        
-                        
-                        
                         //text field
-                        
                         TextField("Amount", text: $rightAmount)
                             .textFieldStyle(.roundedBorder)
                             .multilineTextAlignment(.trailing)
-                        
+                            .focused($rightTyping)
+                            .onChange(of: rightAmount){
+                                if rightTyping{
+                                    leftAmount = rightCurrency.convert(rightAmount, to: leftCurrency)
+                            }
+                        }
                     }
                 }
                 .padding()
                 .background(.black.opacity(0.5))
                 .clipShape(.capsule)
-                
-                
-             
                 Spacer()
-                
               //info button
-                
-                
                 HStack {
                     Spacer()
                     Button{
@@ -143,12 +120,9 @@ struct ContentView: View {
                     }
                 }
             }
-            
-            
         }
     }
 }
-
 #Preview {
     ContentView()
 }
