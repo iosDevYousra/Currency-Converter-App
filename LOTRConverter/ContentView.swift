@@ -75,7 +75,7 @@ struct ContentView: View {
                                 .scaledToFit()
                                 .frame(height:33)
                         }
-                        .padding(.bottom, -5)
+                        .padding(.bottom , -5 )
                         .onTapGesture {
                             showSelectCurrency.toggle()
                         }
