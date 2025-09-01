@@ -5,15 +5,22 @@
 //  Created by M-Store on 8/2/24.
 //
 import SwiftUI
+import TipKit
 struct ContentView: View {
     @State var showExhangeInfo = false
     @State var showSelectCurrency = false
+    
     @State var leftAmount = ""
     @State var rightAmount = ""
+    
     @State var leftCurrency: Currency = .silverPiece
     @State var rightCurrency: Currency = .goldPiece
+    
     @FocusState var leftTyping
     @FocusState var rightTyping
+    
+    let currencyTip = CurrencyTip()
+    
     var body: some View {
         ZStack{
             //background image
@@ -49,7 +56,9 @@ struct ContentView: View {
                         .padding(.bottom, -5)
                         .onTapGesture {
                             showSelectCurrency.toggle()
+                            currencyTip.invalidate(reason: .actionPerformed)
                         }
+                        .popoverTip(currencyTip,  arrowEdge: .bottom)
                         //text field
                         TextField("Amount", text: $leftAmount)
                             .textFieldStyle(.roundedBorder)
@@ -78,6 +87,8 @@ struct ContentView: View {
                         .padding(.bottom, -5)
                         .onTapGesture {
                          showSelectCurrency.toggle()
+                         currencyTip.invalidate(reason: .actionPerformed)
+
                         }
                         //text field
                         TextField("Amount", text: $rightAmount)
@@ -109,6 +120,9 @@ struct ContentView: View {
                 }
             }
         }
+        .task {
+            try? Tips.configure()
+        }
                     .onChange(of: leftAmount){
                         if leftTyping {
                             rightAmount = leftCurrency.convert(leftAmount, to: rightCurrency)
@@ -138,3 +152,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+

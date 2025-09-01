@@ -23,13 +23,13 @@ struct SelectCurrency: View {
                     .fontWeight(.bold)
                 
                 //icon
-                iconGrid(currency : $topCurrency)
+                IconGrid(currency : $topCurrency)
                 //text
                 Text("Select the currency you are would like to onvert to:")
                     .fontWeight(.bold)
                     .padding(.top)
                 //icone
-                iconGrid(currency : $bottomCurrency)
+                IconGrid(currency : $bottomCurrency)
                     .padding(.bottom)
                 //done button
                 Button("Done"){

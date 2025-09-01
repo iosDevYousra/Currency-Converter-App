@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED0012032E5F4A0700884CB0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0012022E5F4A0200884CB0 /* Currency.swift */; };
-		ED0012052E60480C00884CB0 /* iconGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0012042E60480400884CB0 /* iconGrid.swift */; };
+		ED0012052E60480C00884CB0 /* IconGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0012042E60480400884CB0 /* IconGrid.swift */; };
 		ED447CE62C5CC09A00C26639 /* LOTRConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED447CE52C5CC09A00C26639 /* LOTRConverterApp.swift */; };
 		ED447CE82C5CC09A00C26639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED447CE72C5CC09A00C26639 /* ContentView.swift */; };
 		ED447CEA2C5CC09B00C26639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED447CE92C5CC09B00C26639 /* Assets.xcassets */; };
@@ -17,11 +17,12 @@
 		EDA303F72E5B9602002C6BF0 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA303F62E5B95E2002C6BF0 /* ExchangeRate.swift */; };
 		EDA303FD2E5DA5AD002C6BF0 /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA303FC2E5DA599002C6BF0 /* CurrencyIcon.swift */; };
 		EDA303FF2E5DA5D2002C6BF0 /* SelectCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA303FE2E5DA5C1002C6BF0 /* SelectCurrency.swift */; };
+		EDF098B12E644CCD0014E66C /* CurrencyTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF098B02E644CBC0014E66C /* CurrencyTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED0012022E5F4A0200884CB0 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
-		ED0012042E60480400884CB0 /* iconGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconGrid.swift; sourceTree = "<group>"; };
+		ED0012042E60480400884CB0 /* IconGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconGrid.swift; sourceTree = "<group>"; };
 		ED447CE22C5CC09A00C26639 /* LOTRConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOTRConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED447CE52C5CC09A00C26639 /* LOTRConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTRConverterApp.swift; sourceTree = "<group>"; };
 		ED447CE72C5CC09A00C26639 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 		EDA303F62E5B95E2002C6BF0 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		EDA303FC2E5DA599002C6BF0 /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
 		EDA303FE2E5DA5C1002C6BF0 /* SelectCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrency.swift; sourceTree = "<group>"; };
+		EDF098B02E644CBC0014E66C /* CurrencyTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,8 @@
 				EDA303FE2E5DA5C1002C6BF0 /* SelectCurrency.swift */,
 				EDA303FC2E5DA599002C6BF0 /* CurrencyIcon.swift */,
 				ED0012022E5F4A0200884CB0 /* Currency.swift */,
-				ED0012042E60480400884CB0 /* iconGrid.swift */,
+				ED0012042E60480400884CB0 /* IconGrid.swift */,
+				EDF098B02E644CBC0014E66C /* CurrencyTip.swift */,
 				ED447CEC2C5CC09B00C26639 /* Preview Assets.xcassets */,
 				ED447CEB2C5CC09B00C26639 /* Preview Content */,
 			);
@@ -155,11 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED0012052E60480C00884CB0 /* iconGrid.swift in Sources */,
+				ED0012052E60480C00884CB0 /* IconGrid.swift in Sources */,
 				EDA303F72E5B9602002C6BF0 /* ExchangeRate.swift in Sources */,
 				ED4A33122E5B085E0005B9BA /* ExchangeInfo.swift in Sources */,
 				ED447CE82C5CC09A00C26639 /* ContentView.swift in Sources */,
 				ED447CE62C5CC09A00C26639 /* LOTRConverterApp.swift in Sources */,
+				EDF098B12E644CCD0014E66C /* CurrencyTip.swift in Sources */,
 				EDA303FF2E5DA5D2002C6BF0 /* SelectCurrency.swift in Sources */,
 				ED0012032E5F4A0700884CB0 /* Currency.swift in Sources */,
 				EDA303FD2E5DA5AD002C6BF0 /* CurrencyIcon.swift in Sources */,
@@ -301,8 +305,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,8 +333,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

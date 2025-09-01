@@ -1,12 +1,12 @@
 //
-//  iconGrid.swift
+//  IconGrid.swift
 //  LOTRConverter
 //
 //  Created by M-Store on 8/28/25.
 //
 
 import SwiftUI
-struct iconGrid: View {
+struct IconGrid: View {
     //@Environment(\.dismiss) var dismiss
     @Binding var currency: Currency
     var body: some View {
@@ -44,6 +44,6 @@ struct iconGrid: View {
 #Preview {
     @Previewable @State  var currency: Currency = .silverPiece
     
-    iconGrid(currency: $currency)
+    IconGrid(currency: $currency)
 }
 
